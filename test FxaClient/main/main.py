@@ -40,6 +40,7 @@ if __name__ == '__main__':
     client = SyncClient(*bid_assertion_args)
     leGet = client.get_records("bookmarks", True)
     print leGet
+    #juste pour MAJ de GitHub
     
 #     pprint(getattr(client, args.action)(*extra))
     

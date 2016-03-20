@@ -36,7 +36,7 @@ FXA_SERVER_URL = "https://api.accounts.firefox.com"
 #     return session
 
 if __name__ == '__main__':
-    bid_assertion_args = get_browserid_assertion("rbeck@assystem.com", "comptePourDev")
+    bid_assertion_args = get_browserid_assertion("rbeck@assystem.com", "")
     client = SyncClient(*bid_assertion_args)
     leGet = client.get_records("bookmarks", True)
     print leGet
